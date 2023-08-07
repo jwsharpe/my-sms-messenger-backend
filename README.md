@@ -4,12 +4,9 @@ https://my-sms-messenger-frontend.onrender.com/
 Frontend Code Here:
 https://github.com/jwsharpe/my-sms-messenger-frontend
 
-
 ## Summary
 
 This is a frontend and backend for an SMS Messenger Service.
-The goal of this project is to interact with the Twilio API and send out an SMS message. We also want to show and store all sent texts.
-Some additional features include: - Authentication and Authorization - Create a user model for the backend - Users can add a username/password, log in and log out. - Twilio API Webhook, we will have a reflection from the Twilio endpoint to update the status of the sent message. - https://www.twilio.com/docs/usage/webhooks/sms-webhooks?code-sample=code-send-an-sms-with-a-statuscallback-url&code-language=Ruby&code-sdk-version=5.x - The app will be deployed live.
 
 ## Frontend
 
