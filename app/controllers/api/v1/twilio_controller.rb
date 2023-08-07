@@ -6,8 +6,9 @@ class Api::V1::TwilioController < ApplicationController
   def webhook
     recent_message = Message.where(phone_number: params[:To]).order(created_at: :desc).first
 
-    if recent_message.present? and params[:SmsStatus] == "sent"
-      recent_message.update(status: "SENT")
+    if recent_message.present?
+      status = params[:SmsStatus]
+      recent_message.update(status: status.upcase)
 
       render json: { message: "Webhook received, matching messages found, and status updated" }, status: :ok
     else
