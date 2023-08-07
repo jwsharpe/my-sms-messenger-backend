@@ -3,8 +3,8 @@ user1 = User.create(
   email: "user1@example.com",
   password: "password",
   messages: [
-    Message.new(phone_number: "1234567890", body: "Hello from User 1!"),
-    Message.new(phone_number: "9876543210", body: "Another message from User 1!"),
+    Message.new(phone_number: "1234567890", body: "Hello from User 1!", status: "SENT"),
+    Message.new(phone_number: "9876543210", body: "Another message from User 1!", status: "UNSENT"),
   ],
 )
 
